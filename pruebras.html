@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Efecto botón en imagen sin JavaScript</title>
+<style>
+  .contenedor-imagen {
+    position: relative;
+    display: inline-block;
+  }
+  .contenedor-imagen img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .contenedor-imagen a {
+    display: block;
+    position: absolute;
+    bottom: 10px; /* Ajusta la posición verticalmente según necesites */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0; /* El botón estará oculto inicialmente */
+    transition: opacity 0.3s ease;
+  }
+  .contenedor-imagen:hover a {
+    opacity: 1; /* Mostrar el botón cuando se hace hover en el contenedor */
+  }
+</style>
+</head>
+<body>
+
+<div class="contenedor-imagen">
+  <a href="Producto2-ClutchHondaXR150.html">Ir a otra página</a>
+  <img src="resorces/Clutch Honda XR 150.webp" alt="Descripción de la imagen">
+</div>
+
+</body>
+</html>

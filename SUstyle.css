@@ -1,0 +1,392 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    backdrop-filter: blur(15px);
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a{
+    color: black;
+}
+
+header img {
+    min-width: 200px;
+    max-height: 100px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 500px;
+    margin: 0 20px;
+    position: relative;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.mi-boton {
+    background-color:#FFD43B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    height: 100%;
+}
+
+.mi-boton:hover {
+    background-color: black;
+}
+
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav a, .nav button {
+    margin: 0 10px; /* Espacio entre los íconos */
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.nav2 a:hover, .nav2 button:hover {
+    color: #FFD43B;
+}
+
+.nav .loginSingUp a:hover {
+    color: black;
+}
+
+.nav-item {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+}
+
+
+@media (max-width: 768px) {
+    .search-bar {
+        flex: 1 1 100%;
+        max-width: none;
+        margin: 10px 0;
+    }
+    
+    .nav {
+        flex: 1 1 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+.mini-menu{
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.dropbtn i {
+    margin-right: 8px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: none;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin: 3em 0;
+    font-size: 48px; 
+}
+
+header .logo img{
+    width: 20%;
+    border-radius: 5px 5px 5px 5px;
+}
+
+/* ACA TERMINA EL HEADER
+
+
+
+
+
+*/
+ul li{
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.623);
+}
+
+body{
+    background-image: url('resorces/fondo3.jpeg'); 
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/*     background-image: url('resorces/fondo3.jpeg');  */
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    min-height: 100vh; 
+}
+
+.contenedor{
+    position: relative;
+    width: 700px;
+    border: 2px solid rgba(46, 46, 46, 0.2);
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+}
+
+.contenedor h2{
+    font-size: 2.3rem;
+    color: white;
+    text-align: center;
+}
+
+.input-contenedor{
+    position: relative;
+    margin: 30px 0;
+    width: 300px;
+    border-bottom: 2px solid white;
+}
+
+.recordar:hover input{ 
+    transform: scale(1.1);
+}
+
+  .input-contenedor {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-contenedor input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-contenedor label { /* Esta sube el label cuando se escribe en el input */
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: .6s;
+    font-weight: bold;
+}
+
+
+
+
+::placeholder{
+    color: rgba(0, 0, 0, 0.1);
+}
+
+input:focus::placeholder {
+    color: rgba(255, 255, 255, 0.9); 
+}
+
+
+
+#fecha {
+    color: rgba(255, 255, 255, 0.0);
+}
+
+
+#fecha:focus,
+#fecha:valid {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    appearance: none;
+    background: transparent;
+    color: rgb(0, 0, 0);
+}
+
+.input-contenedor select:focus ~ label,
+.input-contenedor select:valid ~ label {
+    top: -10px;
+    left: 10px;
+    color: #000000;
+    font-size: 12px;
+}
+
+.password-container {
+    position: relative;
+  }
+  .toggle-image {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    width: 7%;
+  }
+  
+.input-contenedor input:focus ~ label,
+.input-contenedor input:valid ~ label,
+.input-contenedor input:active ~ label {
+    top: -10px;
+    left: 10px;
+    color: #000000;
+    font-size: 12px;
+}
+
+.input-contenedor input{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: - 35px 0 5px;
+    color: white;
+}
+
+
+
+.input-contenedor i{
+    position: absolute;
+    color: white;
+    font-size: 1.6rem;
+    top: 19px;
+    right: 8px;
+}
+
+
+button{
+    width: 100%;
+    height: 45px;
+    border-radius: 40px;
+    background: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    font-size: 1rem;
+    transition: .4s;
+}
+
+button:hover{
+    opacity: .9;
+}
+
+.iniciarSesion{
+    font-size: .8rem;
+    color: white;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.iniciarSesion p a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.iniciarSesion p a:hover{
+    text-decoration: underline;
+}

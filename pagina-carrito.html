@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Carrito de Compras</h1>
+        <div id="cart" class="card">
+            <div class="card-body">
+                <h5 class="card-title">Carrito</h5>
+                <ul id="cart-items" class="list-group">
+                    <!-- Los productos del carrito aparecerán aquí -->
+                </ul>
+                <button class="btn btn-danger mt-4" id="clear-cart">Vaciar Carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script >
+        document.addEventListener('DOMContentLoaded', function() {
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    const cartItems = document.getElementById('cart-items');
+    const clearCartButton = document.getElementById('clear-cart');
+
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', addToCart);
+    });
+
+    clearCartButton.addEventListener('click', clearCart);
+
+    function addToCart(event) {
+        const productCard = event.target.closest('.card');
+        const productId = productCard.getAttribute('data-product-id');
+        const productTitle = productCard.querySelector('.card-title').innerText;
+        const productPrice = productCard.querySelector('.precio').innerText;
+
+        const cartItem = document.createElement('li');
+        cartItem.classList.add('list-group-item');
+        cartItem.setAttribute('data-product-id', productId);
+        cartItem.innerText = `${productTitle} - ${productPrice}`;
+
+        cartItems.appendChild(cartItem);
+    }
+
+    function clearCart() {
+        cartItems.innerHTML = '';
+    }
+});
+
+    </script>
+</body>
+</html>

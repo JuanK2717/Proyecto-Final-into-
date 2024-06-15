@@ -1,0 +1,475 @@
+/* EL HEADER VA DE ACA HASTA  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(248, 249, 250, 0.2);
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a{
+    color: black;
+}
+
+header img {
+    min-width: 200px;
+    max-height: 100px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 500px;
+    margin: 0 20px;
+    position: relative;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.mi-boton {
+    background-color:#FFD43B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    height: 100%;
+}
+
+.mi-boton:hover {
+    background-color: black;
+}
+
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav a, .nav button {
+    margin: 0 10px; /* Espacio entre los íconos */
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.nav2 a:hover, .nav2 button:hover {
+    color: #FFD43B;
+}
+
+.nav .loginSingUp a:hover {
+    color: black;
+}
+
+.nav-item {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+}
+
+
+@media (max-width: 768px) {
+    .search-bar {
+        flex: 1 1 100%;
+        max-width: none;
+        margin: 10px 0;
+    }
+    
+    .nav {
+        flex: 1 1 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+.mini-menu{
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.dropbtn i {
+    margin-right: 8px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: none;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin: 3em 0;
+    font-size: 48px; 
+}
+
+header .logo img{
+    width: 20%;
+    border-radius: 5px 5px 5px 5px;
+}
+
+ /* ACA SE TERMINA EL HEADER
+ 
+ 
+ 
+ 
+ 
+ 
+ */
+
+ body{
+    background-image: url('resorces/fondo1.jpeg'); 
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.main {
+    padding: 20px;
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 150px; /* Puedes ajustar la posición superior según sea necesario */
+    left: 20px; /* Puedes ajustar la posición izquierda según sea necesario */
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+  }
+  
+  .sidebar-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar-input {
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar-btn {
+    padding: 8px;
+    background-color: #FFD43B;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+  }
+  
+  .content-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    position: absolute;
+    right: 0px;
+    left: 350px;
+    color: rgb(160, 160, 160);
+    text-decoration: underline;
+  }
+  
+  .content-img {
+
+    width: 1000px;
+    height: auto;
+  }
+  
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 250px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .card h3 {
+    margin-top: 10px;
+  }
+  
+  .card p {
+    position: sticky;
+
+    margin-bottom: 10px;
+  }
+  
+  .card a{
+    color: rgba(0, 0, 0, 0.01);
+  }
+
+  .card a:hover{
+    background-color: #FFD43B;
+    color: black;
+    transition: .5s;
+  }
+
+  .button {
+    position: fixed;
+    bottom: -15px;
+    right: 46px;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #FFD43B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #FFD43B;
+  }
+
+
+ 
+
+
+
+
+/* EL FOOTER COMIENZA ACA */
+footer * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+
+
+  #raya {
+    display: none; /* Ocultar las imágenes de separación */
+    width: 50px;
+  }
+  
+  footer ul {
+    list-style: none;
+  }
+  
+  footer {
+    color: #fff;
+    background: #121315;
+    font-size: 12px; /* Tamaño de fuente reducido */
+  }
+  
+  footer p {
+    color: #ccc;
+    max-width: 25em;
+    line-height: 23px;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  footer a:hover {
+    color: #FFD43B; /* Cambio de color al pasar el cursor */
+  }
+  
+  footer h4 {
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    font-size: 14px; /* Tamaño de fuente reducido */
+  }
+  
+  footer .container-f {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .footer {
+    position: relative;
+    background-image: url('resorces/fondo4.jpg');
+    background-size: cover;
+  }
+  
+  .footer::before {
+    content: '';
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  .footer .container-f {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+  }
+  
+  .footer-bot {
+    border-top: 1px #dbdbdb solid;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer .menu li {
+    margin-bottom: 12px;
+  }
+  
+  a .brand {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  
+  .media-icons {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .media-icons a {
+    font-size: 18px;
+    width: 36px;
+    height: 36px;
+    border: 1px #fff solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .media-icons a:hover {
+    background: #fff;
+    color: #111;
+  }
+  
+  .menu .Colo img {
+    width: 20px;
+  }
+  
+  .menu .Servi img {
+    width: 150px;
+    height: 70px;
+  }
+  
+  .service-icons {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  
+  .service-icons h4 {
+    margin-right: 8px;
+    font-size: 14px; /* Tamaño de fuente reducido */
+  }
+  

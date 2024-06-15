@@ -1,0 +1,379 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="facturacion.css">
+    <link rel="shortcut icon" href="resorces/logo.jpeg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/150230ef62.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+ </head>
+ <body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html">
+          <img src="resorces/logo.jpeg" alt="LOGO">
+        </a>
+      </div>
+
+      <div class="nav">
+        <div class="loginSingUp">
+          <a href="login.html" id="login"><i class="fa-solid fa-right-to-bracket" style="color: #FFD43B;"></i></a>
+        </div>
+        <div class="nav2">
+          <a href="#" >|</a>
+        </div>
+        <div class="loginSingUp">
+          <a href="singUp.html" id="singUP"><i class="fa-solid fa-user-plus" style="color: #FFD43B;"></i></i></a>
+        </div>
+        <div class="nav2">
+          <a href="index.html"><i class="fa-solid fa-house"></i></a>
+          <div class="dropdown">
+             <button class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+           <div class="dropdown-content">
+              <a href="index.html">Inicio</a>
+              <a href="index.html">Ofertas</a>
+              <a href="index.html">Productos nuevos</a>
+              <a href="https://wa.me/573153328156" id="whatsapp">Contáctanos</a>
+           </div>
+          </div>
+        </div>
+      </div>
+  </nav>
+  </header>
+  <section>
+    
+        <div class="contenedor">
+<div class="container">
+    <main>
+      
+    </div>
+      <div class="row g-5">
+        <div class="col-md-5 col-lg-4 order-md-last">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-primary">Carrito</span>
+            <span class="badge bg-primary rounded-pill">3</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Primer producto</h6>
+                <small class="text-body-secondary">description</small>
+              </div>
+              <span class="text-body-secondary">$129,000</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Segundo producto</h6>
+                <small class="text-body-secondary">description</small>
+              </div>
+              <span class="text-body-secondary">$89,000</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Tercer item</h6>
+                <small class="text-body-secondary">description</small>
+              </div>
+              <span class="text-body-secondary">$59,000</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
+              <div class="text-success">
+                <h6 class="my-0">Promo code</h6>
+                <small>PRIMERACOMPRA</small>
+              </div>
+              <span class="text-success">−$55,400(-20%)</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total (COP)</span>
+              <strong>$221,600</strong>
+            </li>
+          </ul>
+  
+          <form class="card p-2">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Promo code">
+              <button type="submit" class="btn btn-secondary">Redeem</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-7 col-lg-8">
+          <h4 class="mb-3">Direccion de envio</h4>
+          <form class="needs-validation" novalidate="">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">Primer nombre</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Digita tu nombre" value="" required="">
+                <div class="invalid-feedback">
+                  Se requiere un nombre valido.
+                </div>
+              </div>
+  
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Digita tu apellido" value="" required="">
+                <div class="invalid-feedback">
+                  Se requiere un apellido valido.
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="username" class="form-label">Nombre de usuario</label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text">@</span>
+                  <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                <div class="invalid-feedback">
+                    Se requiere un username valido.
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="email" class="form-label">Email <span class="text-body-secondary">(Optional)</span></label>
+                <input type="email" class="form-control" id="email" placeholder="tu@example.com">
+                <div class="invalid-feedback">
+                  Por favor digita bien tu correo para enviarte la informacion necesaria.
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="address" class="form-label">Dirrecion</label>
+                <input type="text" class="form-control" id="address" placeholder="Cra 123 #12-34" required="">
+                <div class="invalid-feedback">
+                  Por favor ingresa tu direccion.
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="address2" class="form-label">Dirrecion 2 <span class="text-body-secondary">(Optional)</span></label>
+                <input type="text" class="form-control" id="address2" placeholder="Interior, barrio, torre, etc.">
+              </div>
+  
+              <div class="col-md-5">
+                <label for="country" class="form-label">Pais</label>
+                <select class="form-select" id="country" required="">
+                  <option value="">Elije...</option>
+                  <option>Colombia</option>
+                </select>
+                <div class="invalid-feedback">
+                  Elija un pais valido.
+                </div>
+              </div>
+  
+              <div class="col-md-4">
+                <label for="state" class="form-label">Region:</label>
+                    <select id="region" name="region" required>
+                      <option value="">Selecciona una región</option>
+                       <optgroup label="Amazonas">
+                           <option value="Leticia">Leticia</option>
+                           <option value="Puerto Nariño">Puerto Nariño</option>
+                       </optgroup>
+                           <optgroup label="Antioquia">
+                           <option value="Medellín">Medellín</option>
+                           <option value="Bello">Bello</option>
+                           <option value="Envigado">Envigado</option>
+                           <option value="Itagüí">Itagüí</option>
+                       </optgroup>
+      <optgroup label="Atlántico">
+          <option value="Barranquilla">Barranquilla</option>
+          <option value="Soledad">Soledad</option>
+          <option value="Malambo">Malambo</option>
+          <option value="Sabanalarga">Sabanalarga</option>
+      </optgroup>
+      <optgroup label="Bogotá">
+          <option value="Bogotá">Bogotá</option>
+      </optgroup>
+      <optgroup label="Bolívar">
+          <option value="Cartagena">Cartagena</option>
+          <option value="Magangué">Magangué</option>
+          <option value="Turbaco">Turbaco</option>
+      </optgroup>
+      <optgroup label="Boyacá">
+          <option value="Tunja">Tunja</option>
+          <option value="Duitama">Duitama</option>
+          <option value="Sogamoso">Sogamoso</option>
+      </optgroup>
+      <optgroup label="Caldas">
+          <option value="Manizales">Manizales</option>
+          <option value="Villamaría">Villamaría</option>
+          <option value="Chinchiná">Chinchiná</option>
+      </optgroup>
+      <optgroup label="Caquetá">
+          <option value="Florencia">Florencia</option>
+          <option value="Morelia">Morelia</option>
+      </optgroup>
+      <optgroup label="Cauca">
+          <option value="Popayán">Popayán</option>
+          <option value="Santander de Quilichao">Santander de Quilichao</option>
+      </optgroup>
+      <optgroup label="Cesar">
+          <option value="Valledupar">Valledupar</option>
+          <option value="Aguachica">Aguachica</option>
+      </optgroup>
+      <optgroup label="Córdoba">
+          <option value="Montería">Montería</option>
+          <option value="Cereté">Cereté</option>
+      </optgroup>
+      <optgroup label="Cundinamarca">
+          <option value="Soacha">Soacha</option>
+          <option value="Girardot">Girardot</option>
+      </optgroup>
+      <optgroup label="Chocó">
+          <option value="Quibdó">Quibdó</option>
+          <option value="Istmina">Istmina</option>
+      </optgroup>
+      <optgroup label="Huila">
+          <option value="Neiva">Neiva</option>
+          <option value="Pitalito">Pitalito</option>
+      </optgroup>
+      <optgroup label="La Guajira">
+          <option value="Riohacha">Riohacha</option>
+          <option value="Maicao">Maicao</option>
+      </optgroup>
+      <optgroup label="Magdalena">
+          <option value="Santa Marta">Santa Marta</option>
+          <option value="Ciénaga">Ciénaga</option>
+      </optgroup>
+      <optgroup label="Meta">
+          <option value="Villavicencio">Villavicencio</option>
+          <option value="Acacías">Acacías</option>
+      </optgroup>
+      <optgroup label="Nariño">
+          <option value="Pasto">Pasto</option>
+          <option value="Tumaco">Tumaco</option>
+      </optgroup>
+      <optgroup label="Norte de Santander">
+          <option value="Cúcuta">Cúcuta</option>
+          <option value="Ocaña">Ocaña</option>
+      </optgroup>
+      <optgroup label="Quindío">
+          <option value="Armenia">Armenia</option>
+          <option value="Calarcá">Calarcá</option>
+      </optgroup>
+      <optgroup label="Risaralda">
+          <option value="Pereira">Pereira</option>
+          <option value="Dosquebradas">Dosquebradas</option>
+      </optgroup>
+      <optgroup label="Santander">
+          <option value="Bucaramanga">Bucaramanga</option>
+          <option value="Floridablanca">Floridablanca</option>
+      </optgroup>
+      <optgroup label="Sucre">
+          <option value="Sincelejo">Sincelejo</option>
+          <option value="Corozal">Corozal</option>
+      </optgroup>
+      <optgroup label="Tolima">
+          <option value="Ibagué">Ibagué</option>
+          <option value="Espinal">Espinal</option>
+      </optgroup>
+      <optgroup label="Valle del Cauca">
+          <option value="Cali">Cali</option>
+          <option value="Palmira">Palmira</option>
+                   </optgroup>
+                 <optgroup label="Vaupés">
+                   <option value="Mitú">Mitú</option>
+          
+                </optgroup>
+                   <optgroup label="Vichada">
+                    <option value="Puerto Carreño">Puerto Carreño</option>
+          
+                </optgroup>
+                </select>
+                <div class="invalid-feedback">
+                  Por favor elija una region.
+                </div>
+              </div>
+  
+              <div class="col-md-4">
+                <label for="zip" class="form-label">Codigo Postal</label>
+                <input type="text" class="form-control" id="zip" placeholder="ej:050001" required="">
+                <div class="invalid-feedback">
+                  Codigo Postal.
+                </div>
+              </div>
+            </div>
+  
+            <hr class="my-5">
+  
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="same-address">
+              <label class="form-check-label" for="same-address">La direccion de envio es la misma que la de facturacion</label>
+            </div>
+  
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="save-info">
+              <label class="form-check-label" for="save-info">Guardar la informacion</label>
+            </div>
+  
+            <hr class="my-4">
+  
+            <h4 class="mb-6">Pago</h4>
+  
+            <div class="my-6">
+              <div class="form-check">
+                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+                <label class="form-check-label" for="credit"><i class="fa-solid fa-credit-card"></i> Tarjeta de credito</label>
+              </div>
+              <div class="form-check">
+                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+                <label class="form-check-label" for="debit"><i class="fa-regular fa-credit-card"></i> Tarjeta de debito</label>
+              </div>
+              <div class="form-check">
+                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
+                <label class="form-check-label" for="paypal"><i class="fa-brands fa-paypal"></i></label>
+              </div>
+            </div>
+  
+            <div class="row gy-3">
+              <div class="col-md-6">
+                <label for="cc-name" class="form-label">Nombre de la tarjeta</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                <small class="text-body-secondary">Nombre completo que aparece en la tarjeta</small>
+                <div class="invalid-feedback">
+                  Se requiere un nombre de tarjeta
+                </div>
+              </div>
+  
+              <div class="col-md-6">
+                <label for="cc-number" class="form-label">Numero de tarjeta</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                <div class="invalid-feedback">
+                  Se requiere un numero de tarjeta
+                </div>
+              </div>
+  
+              <div class="col-md-3">
+                <label for="cc-expiration" class="form-label">Expiracion</label>
+                <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                <div class="invalid-feedback">
+                  Se requiere una fecha de Expiracion
+                </div>
+              </div>
+  
+              <div class="col-md-3">
+                <label for="cc-cvv" class="form-label">CVV</label>
+                <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                <div class="invalid-feedback">
+                  Se requiere un codigo de seguridad
+                </div>
+              </div>
+            </div>
+  
+            <hr class="my-4">
+            <a href="index.html">
+            <button class="w-100 btn btn-primary btn-lg" type="submit">Pagar</button>
+          </a>
+          </form>
+        </div>
+      </div>
+    </main>
+</div>
+</section>
+</body>
+</html>
